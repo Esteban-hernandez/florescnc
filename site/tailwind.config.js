@@ -10,6 +10,7 @@ module.exports = {
         '8xl': '1920px',
       },
       colors: {
+        background: 'var(--color-background)',
         primary: 'var(--primary)',
         'primary-2': 'var(--primary-2)',
         secondary: 'var(--secondary)',
