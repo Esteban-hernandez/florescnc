@@ -2,7 +2,7 @@
   "provider": "local",
   "features": {
     "wishlist": true,
-    "cart": true
+    "cart": true,
     "search": true,
     "customerAuth": true,
     "customCheckout": true
