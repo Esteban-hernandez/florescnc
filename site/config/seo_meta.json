@@ -1,13 +1,13 @@
 {
-  "title": "ACME Storefront | Powered by Next.js Commerce",
-  "titleTemplate": "%s - ACME Storefront",
-  "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+  "title": "Flores cnc",
+  "titleTemplate": "%s - Flores cnc",
+  "description": "Flores cnc Commerce - https://dev.florescnc.com",
   "openGraph": {
-    "title": "ACME Storefront | Powered by Next.js Commerce",
-    "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+    "title": "Flores cnc Commerce",
+    "description": "Flores cnc Commerce - https://dev.florescnc.com",
     "type": "website",
-    "url": "https://nextjs.org/commerce",
-    "site_name": "Next.js Commerce",
+    "url": "https://dev.florescnc.com",
+    "site_name": "Flores cnc Commerce",
     "images": [
       {
         "url": "/card.png",
