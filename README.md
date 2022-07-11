@@ -1,11 +1,10 @@
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fcommerce&project-name=commerce&repo-name=commerce&demo-title=Next.js%20Commerce&demo-description=An%20all-in-one%20starter%20kit%20for%20high-performance%20e-commerce%20sites.&demo-url=https%3A%2F%2Fdemo.vercel.store&demo-image=https%3A%2F%2Fbigcommerce-demo-asset-ksvtgfvnd.vercel.app%2Fbigcommerce.png&integration-ids=oac_MuWZiE4jtmQ2ejZQaQ7ncuDT,oac_9HSKtXld74NG0srzdxSiBGty&skippable-integrations=1&root-directory=site&build-command=cd%20..%20%26%26%20yarn%20build)
 
-# Next.js Commerce
+# Flores cnc 
 
-The all-in-one starter kit for high-performance e-commerce sites. With a few clicks, Next.js developers can clone, deploy and fully customize their own store.
-Start right now at [nextjs.org/commerce](https://nextjs.org/commerce)
+El kit de inicio todo en uno para sitios de comercio electrónico de alto rendimiento. Con unos pocos clics, los desarrolladores de Next.js pueden clonar, implementar y personalizar completamente su propia tienda. Comienza ahora mismo en [nextjs.org/commerce](https://nextjs.org/commerce)
 
-Demo live at: [demo.vercel.store](https://demo.vercel.store/)
+Demostración en vivo en: [dev.florescnc.com](https://dev.florescnc.com)
 
 - Shopify Demo: https://shopify.vercel.store/
 - Swell Demo: https://swell.vercel.store/
@@ -18,70 +17,69 @@ Demo live at: [demo.vercel.store](https://demo.vercel.store/)
 - Commerce.js Demo: https://commercejs.vercel.store/
 - SalesForce Cloud Commerce Demo: https://salesforce-cloud-commerce.vercel.store/
 
-## Run minimal version locally
+## Ejecute la versión mínima localmente
 
-> To run a minimal version of Next.js Commerce you can start with the default local provider `@vercel/commerce-local` that has disabled all features (cart, auth) and use static files for the backend
-
+> Para ejecutar una versión mínima de Next.js Commerce, puede comenzar con el proveedor local predeterminado `@vercel/commerce-local` que ha deshabilitado todas las funciones (carrito, autenticación) y usar archivos estáticos para el backend
 ```bash
-yarn # run this command in root folder of the mono repo
+yarn # Ejecute este comando en la carpeta raíz del repositorio mono
 yarn dev
 ```
 
-> If you encounter any problems while installing and running for the first time, please see the Troubleshoot section
+> Si encuentra algún problema durante la instalación y ejecución por primera vez, consulte la sección Solución de problemas
+## Características
 
-## Features
+- Rendimiento por defecto 
+- Listo para SEO 
+- Internacionalización 
+- Responsive 
+- Componentes de la interfaz de usuario 
+- Temas - Enlaces de datos estandarizados 
+- Integraciones 
+- Integración perfecta con las plataformas de comercio electrónico más comunes. 
+- Soporte de modo oscuro
 
-- Performant by default
-- SEO Ready
-- Internationalization
-- Responsive
-- UI Components
-- Theming
-- Standardized Data Hooks
-- Integrations - Integrate seamlessly with the most common ecommerce platforms.
-- Dark Mode Support
+## integraciones
 
-## Integrations
+Next.js Commerce se integra de forma inmediata con BigCommerce, Shopify, Swell, Saleor, Vendure, Spree y Commerce.js. Planeamos admitir todos los principales backends de comercio electrónico.
 
-Next.js Commerce integrates out-of-the-box with BigCommerce, Shopify, Swell, Saleor, Vendure, Spree and Commerce.js. We plan to support all major ecommerce backends.
+## Consideraciones
 
-## Considerations
+- `packages/commerce` contiene todos los tipos, ayudantes y funciones que se utilizarán como base para construir un nuevo **proveedor**. 
+- **provider** viven en la carpeta raíz de `packages` y ampliarán los tipos y la funcionalidad de Next.js Commerce (`packages/commerce`). 
+- Tenemos una **API de funciones** para garantizar la paridad de funciones entre la interfaz de usuario y el proveedor. La interfaz de usuario debe actualizarse en consecuencia y no debe incluirse ningún código adicional. Toda la configuración adicional para las funciones se encontrará en `características` en `commerce.config.json` y, si es necesario, también se puede acceder mediante programación. 
+- Cada **provider** debe agregar su correspondiente `next.config.js` y `commerce.config.json` agregando datos específicos relacionados con el proveedor. Por ejemplo, en el caso de BigCommerce, las imágenes CDN y las rutas API adicionales.
 
-- `packages/commerce` contains all types, helpers and functions to be used as base to build a new **provider**.
-- **Providers** live under `packages`'s root folder and they will extend Next.js Commerce types and functionality (`packages/commerce`).
-- We have a **Features API** to ensure feature parity between the UI and the Provider. The UI should update accordingly and no extra code should be bundled. All extra configuration for features will live under `features` in `commerce.config.json` and if needed it can also be accessed programatically.
-- Each **provider** should add its corresponding `next.config.js` and `commerce.config.json` adding specific data related to the provider. For example in case of BigCommerce, the images CDN and additional API routes.
 
 ## Configuration
 
-### How to change providers
+### Cómo cambiar de proveedor
 
-Open `site/.env.local` and change the value of `COMMERCE_PROVIDER` to the provider you would like to use, then set the environment variables for that provider (use `site/.env.template` as the base).
+Abra `site/.env.local` y cambie el valor de `COMMERCE_PROVIDER` al proveedor que le gustaría usar, luego configure las variables de entorno para ese proveedor (use `site/.env.template` como base).
 
-The setup for Shopify would look like this for example:
-
+La configuración de Shopify se vería así, por ejemplo
 ```
 COMMERCE_PROVIDER=@vercel/commerce-shopify
 NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESS_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxx
 NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN=xxxxxxx.myshopify.com
 ```
 
-### Features
+### Funciones
 
-Every provider defines the features that it supports under `packages/{provider}/src/commerce.config.json`
+Cada proveedor define las funciones que admite en `packages/{provider}/src/commerce.config.json
 
-#### Features Available
+#### Funciones disponibles 
 
-The following features can be enabled or disabled. This means that the UI will remove all code related to the feature.
-For example: Turning `cart` off will disable Cart capabilities.
+Las siguientes funciones se pueden habilitar o deshabilitar. Esto significa que la interfaz de usuario eliminará todo el código relacionado con la función. 
 
-- cart
-- search
-- wishlist
-- customerAuth
-- customCheckout
+Por ejemplo: Apagar `cart` deshabilitará las capacidades del carrito. 
 
-#### How to turn Features on and off
+- carrito 
+- búsqueda 
+- lista de deseos 
+- customerAuth 
+- customCheckout 
+
+#### Cómo activar y desactivar las funciones
 
 > NOTE: The selected provider should support the feature that you are toggling. (This means that you can't turn wishlist on if the provider doesn't support this functionality out the box)
 
