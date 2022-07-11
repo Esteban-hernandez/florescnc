@@ -1,4 +1,4 @@
-[![Deploy with Vercel](https://vercel.com/esteban-hernandez/florescnc)
+[![Deploy with Vercel](https://vercel.com/esteban-hernandez/florescnc)]
 # Flores cnc 
 
 El kit de inicio todo en uno para sitios de comercio electrónico de alto rendimiento. Con unos pocos clics, los desarrolladores de Next.js pueden clonar, implementar y personalizar completamente su propia tienda. Comienza ahora mismo en [nextjs.org/commerce](https://nextjs.org/commerce)
