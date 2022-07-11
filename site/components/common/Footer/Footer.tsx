@@ -17,7 +17,7 @@ interface Props {
 
 const links = [
   {
-    name: 'Home',
+    name: 'Inicio',
     url: '/',
   },
 ]
