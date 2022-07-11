@@ -1,5 +1,4 @@
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fcommerce&project-name=commerce&repo-name=commerce&demo-title=Next.js%20Commerce&demo-description=An%20all-in-one%20starter%20kit%20for%20high-performance%20e-commerce%20sites.&demo-url=https%3A%2F%2Fdemo.vercel.store&demo-image=https%3A%2F%2Fbigcommerce-demo-asset-ksvtgfvnd.vercel.app%2Fbigcommerce.png&integration-ids=oac_MuWZiE4jtmQ2ejZQaQ7ncuDT,oac_9HSKtXld74NG0srzdxSiBGty&skippable-integrations=1&root-directory=site&build-command=cd%20..%20%26%26%20yarn%20build)
-
+[![Deploy with Vercel](https://vercel.com/esteban-hernandez/florescnc)
 # Flores cnc 
 
 El kit de inicio todo en uno para sitios de comercio electrónico de alto rendimiento. Con unos pocos clics, los desarrolladores de Next.js pueden clonar, implementar y personalizar completamente su propia tienda. Comienza ahora mismo en [nextjs.org/commerce](https://nextjs.org/commerce)
@@ -81,10 +80,10 @@ Por ejemplo: Apagar `cart` deshabilitará las capacidades del carrito.
 
 #### Cómo activar y desactivar las funciones
 
-> NOTE: The selected provider should support the feature that you are toggling. (This means that you can't turn wishlist on if the provider doesn't support this functionality out the box)
+> NOTA: El proveedor seleccionado debe ser compatible con la función que está alternando. (Esto significa que no puede activar la lista de deseos si el proveedor no admite esta funcionalidad desde el primer momento)
 
-- Open `site/commerce.config.json`
-- You'll see a config file like this:
+- Abra `site/commerce.config.json`
+- Verás un archivo de configuración como este:
   ```json
   {
     "features": {
@@ -93,18 +92,18 @@ Por ejemplo: Apagar `cart` deshabilitará las capacidades del carrito.
     }
   }
   ```
-- Turn `wishlist` on by setting `wishlist` to `true`.
-- Run the app and the wishlist functionality should be back on.
+- Active la "lista de deseos" configurando "wishlist" en "true".
+- Ejecute la aplicación y la funcionalidad de la lista de deseos debería volver a estar activada.
 
-### How to create a new provider
+### Cómo crear un nuevo proveedor
 
-Follow our docs for [Adding a new Commerce Provider](packages/commerce/new-provider.md).
+Siga nuestros documentos para [agregar un nuevo proveedor de comercio](packages/commerce/new-provider.md).
 
-If you succeeded building a provider, submit a PR with a valid demo and we'll review it asap.
+Si logró crear un proveedor, envíe un PR con una demostración válida y lo revisaremos lo antes posible.
 
-## Contribute
+## Contribuir
 
-Our commitment to Open Source can be found [here](https://vercel.com/oss).
+Nuestro compromiso con el código abierto se puede encontrar [aquí] (https://vercel.com/oss).
 
 1. [Fork](https://help.github.com/articles/fork-a-repo/) this repository to your own GitHub account and then [clone](https://help.github.com/articles/cloning-a-repository/) it to your local device.
 2. Create a new branch `git checkout -b MY_BRANCH_NAME`
