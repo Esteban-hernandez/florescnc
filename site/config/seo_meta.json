@@ -13,13 +13,13 @@
         "url": "/card.png",
         "width": "800",
         "height": "600",
-        "alt": "Next.js Commerce"
+        "alt": "Flores cnc commerce"
       }
     ]
   },
   "twitter": {
-    "handle": "@nextjs",
-    "site": "@nextjs",
-    "cardType": "summary_large_image"
+    "handle": "@florescnc",
+    "site": "@florescnc",
+    "cardType": "summary"
   }
 }
